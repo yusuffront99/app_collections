@@ -49,7 +49,7 @@
     <script src="{{asset('frontend/dist/assets/js/plugins/bootstrap.min.js')}}"></script>
     <script src="{{asset('frontend/dist/assets/js/ripple.js')}}"></script>
     <script src="{{asset('frontend/dist/assets/js/pcoded.min.js')}}"></script>
-
+    @stack('jquery-script');
 {{-- <!-- Apex Chart -->
 <script src="assets/js/plugins/apexcharts.min.js"></script>
 

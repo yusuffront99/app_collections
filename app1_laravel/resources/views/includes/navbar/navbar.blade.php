@@ -29,14 +29,16 @@
                 <li class="nav-item">
                     <a href="index.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Laporan Harian</span></a>
                 </li>
-                <li class="nav-item pcoded-hasmenu">
+                <li class="nav-item">
+                    <a href="{{route('operator')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Operator</span></a>
+                </li>
+                {{-- <li class="nav-item pcoded-hasmenu">
                     <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Operator</span></a>
                     <ul class="pcoded-submenu">
                         <li><a href="layout-vertical.html" target="_blank">Operator CCR</a></li>
                         <li><a href="layout-horizontal.html" target="_blank">Operator Lokal</a></li>
-                        <li><a href="{{route('operator')}}">+Tambah Operator</a></li>
                     </ul>
-                </li>
+                </li> --}}
                 <li class="nav-item pcoded-menu-caption">
                     <label>UI Element</label>
                 </li>
