@@ -34,6 +34,7 @@
                     <ul class="pcoded-submenu">
                         <li><a href="layout-vertical.html" target="_blank">Operator CCR</a></li>
                         <li><a href="layout-horizontal.html" target="_blank">Operator Lokal</a></li>
+                        <li><a href="{{route('operator')}}">+Tambah Operator</a></li>
                     </ul>
                 </li>
                 <li class="nav-item pcoded-menu-caption">

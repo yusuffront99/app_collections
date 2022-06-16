@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/dashboard', function () {
-    return view('pages.admin.dashboard');
+Route::get('/login', [AuthController::class,'login'])->name('login');
+Route::post('/auth_login', [AuthController::class,'auth_login'])->name('auth_login');
+
+Route::get('/home', function(){
+    return view('pages.home');
 });
-Route::get('/login', function () {
-    return view('pages.login.login');
+
+Route::prefix('home/adminer')->group(function () {
+    Route::get('/', function () {
+        return view('pages.admin.dashboard');
+    });
+    Route::get('/operator', [AuthController::class, 'operator'])->name('operator');
+    // Route::get('/create_operator', [AuthController::class, 'create_operator'])->name('create_operator');
 });
+
