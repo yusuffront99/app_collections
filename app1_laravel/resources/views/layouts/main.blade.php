@@ -21,8 +21,6 @@
 
     <!-- vendor css -->
     <link rel="stylesheet" href="{{asset('frontend/dist/assets/css/style.css')}}">
-    
-    
 
 </head>
 <body class="">
