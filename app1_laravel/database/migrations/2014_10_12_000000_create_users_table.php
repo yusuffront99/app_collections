@@ -24,7 +24,8 @@ class CreateUsersTable extends Migration
             $table->string('jabatan');
             $table->string('grade');
             $table->enum('jk', ['pria', 'wanita']);
-            $table->longText('foto_profile');
+            $table->longText('foto_profil')->nullable();
+            $table->string('is_role')->default('operator');
             $table->rememberToken();
             $table->timestamps();
         });

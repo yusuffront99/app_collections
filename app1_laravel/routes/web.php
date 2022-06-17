@@ -27,6 +27,6 @@ Route::prefix('home/adminer')->group(function () {
     });
     Route::get('/operator', [AuthController::class, 'operator'])->name('operator');
     Route::get('/operator_create', [AuthController::class, 'operator_create'])->name('operator_create');
-    Route::get('/operator_store', [AuthController::class, 'operator_store'])->name('operator_store');
+    Route::post('/operator_store', [AuthController::class, 'operator_store'])->name('operator_store');
 });
 
